@@ -45,9 +45,9 @@ a{
 
 .nav{
     width: 100vw;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 5px;
-    box-shadow: 0 0 4px #bdbaba;
+    border-bottom: 0.2px solid #f1f1f0;
     position: fixed;
     background-color: #fff;
 }
@@ -59,8 +59,8 @@ a{
 
 .item{
     color: #868686;
-    font-size: 17px;
-    padding: 20px;
+    font-size: 15px;
+    padding: 15px;
 }
 
 .item:hover{
@@ -203,6 +203,69 @@ a{
 .links{
     gap: 30px;
     color: #316dc1;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 900px) {
+    /* nav */
+    .item {
+        display: none;
+    }
+    .nav{
+        gap: 500px;
+        width: 100vw;
+        height: 80px;
+        border-bottom: none;
+    }
+    .nav-image img{
+        width: 150px;
+        height: 50px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .icon{
+        width: 60px;
+        height: 50px;
+    }
+
+    /* head */
+    .head-content{
+        justify-content: center;
+        align-items: center;
+        margin-left: 200px;
+    }
+
+    .head-content img{
+        width: 500px;
+        height: 200px;
+    }
+
+    .head-content h1,p,a{
+        text-align: center;
+    }
+
+    /* feature1 */
+    .feature1{
+        width: 900px;
+        height: 800px;
+    }
+
+    .feature1{
+        flex-direction: column;
+    }
+
+    .feature2{
+        flex-direction: column;
+        margin-left: 200px;
+    }
+
+    .feature2-inner-text{
+        width: 500px;
+        text-align: left;
+    }
 }
 
 
